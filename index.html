@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="calc.css">
+  <link rel="stylesheet" href="w3.css">
+  <body>
+    <div id="frame">
+      <h3>Calculator</h3>
+      <section>
+        <input id="sub" type="text">
+        <input id="sub2" type="text" disabled>
+      </section>
+
+      <!--buttons starts here-->
+      <div id="buttons">
+        <div class="box w3-green" onclick="clr()">
+          <input type="button" value="clr">
+        </div>
+      <div class="box w3-red" onclick="del()">
+        <input type="button" value="del">
+      </div>
+      <div class="box w3-xlarge" onclick="showNumb('/')">
+        <input type="button" value="&divide;">
+      </div>
+      <div class="box w3-xlarge" onclick="showNumb(9)">
+        <input type="button" value="9">
+      </div>
+      <div class="box w3-xlarge" onclick="showNumb(8)">
+        <input type="button" value="8">
+      </div>
+      <div class="box w3-xlarge" onclick="showNumb(7)">
+        <input type="button" value="7">
+      </div>
+      <div class="box w3-xlarge" onclick="showNumb('-')">
+        <input type="button" value="-">
+      </div>
+      <div class="box w3-xlarge" onclick="showNumb(6)">
+        <input type="button" value="6">
+      </div>
+      <div class="box w3-xlarge" onclick="showNumb(5)">
+        <input type="button" value="5">
+      </div>
+      <div class="box w3-xlarge" onclick="showNumb(4)">
+        <input type="button" value="4">
+      </div>
+      <div class="box w3-blue w3-xlarge" onclick="showNumb('+')">
+        <input type="button" value="+">
+      </div>
+      <div class="box w3-xlarge" onclick="showNumb(3)">
+        <input type="button" value="3">
+      </div>
+      <div class="box w3-xlarge" onclick="showNumb(2)">
+        <input type="button" value="2">
+      </div>
+      <div class="box w3-xlarge" onclick="showNumb(1)">
+        <input type="button" value="1">
+      </div>
+      <div class="box w3-xlarge" onclick="showNumb(0)">
+        <input type="button" value="0">
+      </div>
+      <div class="box w3-xlarge" onclick="showNumb('.')">
+        <input type="button" value=".">
+      </div>
+      <div class="box w3-xlarge" onclick="showNumb('*')">
+        <input type="button" value="&times;" >
+      </div>
+      <div class="box w3-red w3-xlarge" onclick="result()">
+        <input type="button" value="=" >
+      </div>
+    </div>
+    <!--buttons ends here-->
+    </div>
+  </body>
+
+  <script src="calc.js"></script>
+</html>
